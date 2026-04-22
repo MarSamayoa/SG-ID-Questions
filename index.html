@@ -3564,13 +3564,11 @@ const ASKER_META = {
   'South Africa (SADC)': { type: 'group', entities: ['SADC'] },
   'Australia (also New Zealand)': { type: 'group', entities: ['Australia and New Zealand'] },
   'Egypt (Arab Group)': { type: 'group', entities: ['Arab Group'] },
-
   '1 for 8 Billion Campaign (civil society)': { type: 'civil-society', entities: ['1 for 8 Billion Campaign'] },
   'Adam Lupel, CDIL / C4UN (civil society)': { type: 'civil-society', entities: ['Centre for Development of International Law (CDIL / Coalition for the UN We Need)'] },
   'Equality Now (civil society)': { type: 'civil-society', entities: ['Equality Now'] },
   'Sustainable Investments & Alliances for Africa (civil society)': { type: 'civil-society', entities: ['Sustainable Investments & Alliances for Africa'] },
   'Youth for a Secure Cyberspace (civil society, pre-recorded)': { type: 'civil-society', entities: ['Youth for a Secure Cyberspace'] },
-
   'Liechtenstein': { type: 'individual', entities: ['Liechtenstein'] },
   'Cuba': { type: 'individual', entities: ['Cuba'] },
   'Switzerland': { type: 'individual', entities: ['Switzerland'] },
@@ -3594,13 +3592,9 @@ const ASKER_META = {
   'Palestine (Observer State)': { type: 'individual', entities: ['Palestine (Observer State)'] },
   'Estonia': { type: 'individual', entities: ['Estonia'] },
   'Egypt (national capacity)': { type: 'individual', entities: ['Egypt'] },
-
   'Barbados (CARICOM) & Estonia': { type: 'group', entities: ['CARICOM', 'Estonia'] },
   'Jordan (ACT Group) & Barbados (CARICOM)': { type: 'group', entities: ['ACT Group', 'CARICOM'] },
-  'Uganda (NAM) & Cuba': { type: 'group', entities: ['Non-Aligned Movement', 'Cuba'] }
-};
-
-
+  'Uganda (NAM) & Cuba': { type: 'group', entities: ['Non-Aligned Movement', 'Cuba'] },
   "Mali (African Group)": { type: "group", entities: ["African Group"] },
   "Andorra (Francophone Group)": { type: "group", entities: ["Francophone Group"] },
   "Kyrgyzstan (Landlocked Developing Countries)": { type: "group", entities: ["Landlocked Developing Countries"] },
@@ -3627,7 +3621,9 @@ const ASKER_META = {
   "Maldives": { type: "individual", entities: ["Maldives"] },
   "Sierra Leone": { type: "individual", entities: ["Sierra Leone"] },
   "Haiti": { type: "individual", entities: ["Haiti"] },
-  "Yemen": { type: "individual", entities: ["Yemen"] },
+  "Yemen": { type: "individual", entities: ["Yemen"] }
+}
+
 function classifyType(text) {
   if (!text) return null;
   if (ASKER_META[text]) return ASKER_META[text].type;
